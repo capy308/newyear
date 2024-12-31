@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced New Year 2025 Celebration</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎆 Welcome to 2025! 🎆</h1>
+        <p id="countdown" class="countdown"></p>
+
+        <div class="interactive">
+            <input type="text" id="nameInput" placeholder="Enter your name..." />
+            <button id="greetButton" class="button">Greet Me!</button>
+        </div>
+
+        <div class="controls">
+            <label for="fireworkShape">Firework Shape:</label>
+            <select id="fireworkShape">
+                <option value="circle">Circle</option>
+                <option value="star">Star</option>
+                <option value="heart">Heart</option>
+            </select>
+
+            <button id="celebrate" class="button">Celebrate!</button>
+            <button id="themeToggle" class="button">Change Theme</button>
+            <button id="generateMessage" class="button">Inspire Me!</button>
+        </div>
+
+        <div class="resolution">
+            <input type="text" id="resolutionInput" placeholder="Enter your resolution..." />
+            <button id="addResolution" class="button">Add Resolution</button>
+            <marquee id="resolutionMarquee" behavior="scroll" direction="left"></marquee>
+        </div>
+    </div>
+
+    <canvas id="fireworks"></canvas>
+    <audio id="celebrateSound" src="https://www.fesliyanstudios.com/play-mp3/6469"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

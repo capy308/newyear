@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background 1s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    max-width: 90%;
+}
+
+.title {
+    font-size: 3em;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff9, 0 0 30px #ff9;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff9, 0 0 40px #ff9;
+    }
+}
+
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    background: #ff9;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff;
+    transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: #ffd700;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#resolutionMarquee {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
